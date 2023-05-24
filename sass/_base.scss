@@ -3,6 +3,8 @@ $color-secondary_blue_1: #C4DFDF;
 $color-secondary_blue_2: #D2E9E9;
 $color-secondary_blue_3: #E3F4F4;
 
+$color-footer: #5C8984;
+
 $color-font_color_1: #332e28;
 
 //Fonts
@@ -31,9 +33,12 @@ body {
 }
 
 .container {
+    padding: 10rem;
+    height: 1000px;
+
     display: grid;
 
-    // grid-template-columns: ;
+    grid-template-columns: [side-section_start] 1fr [side-section_end content-section_start] 1fr 1fr 1fr 1fr [content-section_end];
 
-    // grid-template-rows: ;
+    grid-template-rows: repeat(13, 1fr);
 }

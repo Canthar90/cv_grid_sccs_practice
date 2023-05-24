@@ -16,4 +16,38 @@ body {
   font-weight: 300; }
 
 .container {
-  display: grid; }
+  padding: 10rem;
+  height: 1000px;
+  display: grid;
+  grid-template-columns: [side-section_start] 1fr [side-section_end content-section_start] 1fr 1fr 1fr 1fr [content-section_end];
+  grid-template-rows: repeat(13, 1fr); }
+
+.about_me {
+  background-color: #C4DFDF;
+  grid-column: side-section_start / side-section_end;
+  grid-row: 4/-2; }
+
+.education {
+  background-color: #D2E9E9;
+  grid-row: 1 / 3;
+  grid-column: content-section_start / content-section_end; }
+
+.experience {
+  background-color: orangered;
+  grid-row: 3 / 6;
+  grid-column: content-section_start / content-section_end; }
+
+.footer {
+  background-color: #5C8984;
+  grid-column: 1 / -1;
+  grid-row: -2 / -1; }
+
+.hero {
+  background-color: orange;
+  grid-column: 1 / 2;
+  grid-row: 1 / 4; }
+
+.skills {
+  background-color: #E3F4F4;
+  grid-row: 6 / 10;
+  grid-column: content-section_start / content-section_end; }
