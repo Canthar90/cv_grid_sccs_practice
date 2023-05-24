@@ -16,16 +16,34 @@ body {
   font-weight: 300; }
 
 .container {
-  padding: 10rem;
+  margin: 10rem 18rem;
   height: 1000px;
+  box-shadow: 0 2rem 4rem rgba(51, 46, 40, 0.95);
+  background-color: #E3F4F4;
   display: grid;
   grid-template-columns: [side-section_start] 1fr [side-section_end content-section_start] 1fr 1fr 1fr 1fr [content-section_end];
   grid-template-rows: repeat(13, 1fr); }
 
+.heading-1 {
+  font-size: 4rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400; }
+
+.heading-4 {
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  display: flex;
+  text-align: center; }
+
 .about_me {
   background-color: #C4DFDF;
   grid-column: side-section_start / side-section_end;
-  grid-row: 4/-2; }
+  grid-row: 5/-2; }
+
+.certifications {
+  grid-row: 10 / 13;
+  grid-column: content-section_start / content-section_end; }
 
 .education {
   background-color: #D2E9E9;
@@ -43,9 +61,18 @@ body {
   grid-row: -2 / -1; }
 
 .hero {
-  background-color: orange;
   grid-column: 1 / 2;
-  grid-row: 1 / 4; }
+  grid-row: 1 / 5;
+  display: grid;
+  padding: 2rem;
+  justify-items: center;
+  justify-content: center;
+  row-gap: 2rem;
+  line-height: 2.2rem; }
+  .hero__photo {
+    height: 14rem;
+    overflow: hidden;
+    border-radius: 50%; }
 
 .skills {
   background-color: #E3F4F4;
