@@ -1,0 +1,19 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Monserrat", sans-serif;
+  color: #332e28;
+  line-height: 1.6rem;
+  font-weight: 300; }
+
+.container {
+  display: grid; }
