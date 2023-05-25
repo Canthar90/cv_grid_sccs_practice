@@ -35,13 +35,13 @@ body {
 }
 
 .container {
-    margin: 10rem 18rem;
+    margin: 10rem 22rem;
     
     box-shadow: 0 2rem 4rem rgba(#332e28, .95);
     background-color: $color-secondary_blue_3;
     display: grid;
 
-    grid-template-columns: [side-section_start] 1fr [side-section_end content-section_start] 1fr 1fr 1fr 1fr [content-section_end];
+    grid-template-columns: [side-section_start] 1fr [side-section_end content-section_start] 4fr [content-section_end];
 
     grid-template-rows: repeat(13, 1fr);
 }
@@ -50,13 +50,30 @@ body {
     width: 3rem;
     height: 3rem;
     fill: $color-media-icon;
-
 }
 
 .skill_icon {
     width: 1.6rem;
     height: 1.6rem;
     fill: $color-media-icon;
+}
+
+.hr {
+    display: grid;
+    grid-template-columns: 0.1fr .8fr  0.1fr;
+    align-items: center;
     
-   
+
+    &::after {
+        content: "";
+        height: 2px;
+        display: block;
+        background-color: $color-media-icon;
+        grid-column: 2 / 3;
+    }
+}
+
+.dot {
+    font-size: 3.5rem;
+    
 }
