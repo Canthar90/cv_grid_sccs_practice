@@ -17,12 +17,12 @@ body {
   font-size: 1.5rem; }
 
 .container {
-  margin: 10rem 22rem;
+  margin: 10rem 45rem;
   box-shadow: 0 2rem 4rem rgba(51, 46, 40, 0.95);
-  background-color: #E3F4F4;
+  background-color: #F8F6F4;
   display: grid;
-  grid-template-columns: [side-section_start] 1fr [side-section_end content-section_start] 4fr [content-section_end];
-  grid-template-rows: repeat(13, 1fr); }
+  grid-template-columns: [side-section_start] 0.9fr [side-section_end content-section_start] 2fr [content-section_end];
+  grid-template-rows: 0.4fr repeat(8, 1fr); }
 
 .media-icon {
   width: 3rem;
@@ -67,9 +67,9 @@ body {
 .about_me {
   background-color: #C4DFDF;
   grid-column: side-section_start / side-section_end;
-  grid-row: 4/-2;
+  grid-row: 3/-2;
   display: grid;
-  grid-template-rows: 1fr .1fr .5fr .1fr .5fr 1.5fr;
+  grid-template-rows: 30rem 1rem 15rem 1rem 15rem 30rem;
   justify-content: center;
   align-items: center;
   padding-top: 2rem;
@@ -96,7 +96,7 @@ body {
     row-gap: 0.5rem; }
 
 .certifications {
-  grid-row: 10 / 13;
+  grid-row: 8 / 9;
   grid-column: content-section_start / content-section_end; }
 
 .education {
@@ -104,8 +104,8 @@ body {
   grid-row: 1 / 3;
   grid-column: content-section_start / content-section_end;
   display: grid;
-  grid-template-columns: 2fr 4fr 0.5fr;
-  grid-template-rows: 0.2fr 1fr 1rem; }
+  grid-template-rows: 0.2fr 1fr 1rem;
+  padding-left: 1rem; }
   .education .hr {
     grid-row: 3 / 4;
     grid-column: 2 / -1; }
@@ -113,23 +113,23 @@ body {
     display: grid;
     grid-template-columns: 0.1fr 2fr;
     align-items: center;
-    grid-column: 2 / 3;
+    grid-column: 1 / 2;
     grid-row: 1 / 2; }
   .education__content {
-    grid-column: 2 / 3;
+    grid-column: 1 / 2;
     grid-row: 2 / 3;
     display: grid;
-    grid-template-columns: 0.2fr 1fr 0.5fr; }
+    grid-template-columns: 0.2fr 1fr 0.5fr 3rem; }
     .education__content .dot {
       display: flex;
-      align-items: center;
+      align-items: end;
       justify-content: center; }
     .education__content-date {
       grid-column: 3 / 4;
       grid-row: 1 / 2; }
     .education__content-education-institution {
       display: flex;
-      align-items: center;
+      align-items: end;
       justify-content: start;
       font-family: "Roboto", sans-serif;
       font-weight: 400;
@@ -139,12 +139,60 @@ body {
       display: flex;
       align-items: start;
       justify-content: start;
-      font-weight: 200; }
+      font-weight: 100;
+      color: #494540; }
 
 .experience {
-  background-color: orangered;
   grid-row: 3 / 6;
-  grid-column: content-section_start / content-section_end; }
+  grid-column: content-section_start / content-section_end;
+  display: grid;
+  grid-template-rows: 0.2fr 4fr 1rem;
+  padding-left: 1rem; }
+  .experience__heading {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: 0.1fr 2fr;
+    align-items: center; }
+  .experience__content {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr); }
+    .experience__content__item {
+      grid-column: 1 / -1;
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: 0.2fr 1fr 0.5fr 3rem;
+      grid-template-rows: 1fr 0.5fr; }
+      .experience__content__item .dot {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        display: flex;
+        align-items: end;
+        justify-content: center; }
+      .experience__content__item-date {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        font-weight: 100; }
+      .experience__content__item-company {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        display: flex;
+        align-items: end;
+        justify-content: start;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 2rem; }
+      .experience__content__item-role {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        display: flex;
+        align-items: start;
+        justify-content: start; }
 
 .footer {
   background-color: #5C8984;
@@ -153,7 +201,7 @@ body {
 
 .hero {
   grid-column: 1 / 2;
-  grid-row: 1 / 4;
+  grid-row: 1 / 3;
   display: grid;
   padding: 2rem;
   justify-items: center;
@@ -167,5 +215,5 @@ body {
 
 .skills {
   background-color: #E3F4F4;
-  grid-row: 6 / 10;
+  grid-row: 6 / 8;
   grid-column: content-section_start / content-section_end; }

@@ -7,6 +7,7 @@ $color-footer: #5C8984;
 $color-media-icon: #27374D;
 
 $color-font_color_1: #332e28;
+$color-font_color_2: #494540;
 
 //Fonts
 $font_primary: "Monserrat", sans-serif;
@@ -35,15 +36,15 @@ body {
 }
 
 .container {
-    margin: 10rem 22rem;
+    margin: 10rem 45rem;
     
     box-shadow: 0 2rem 4rem rgba(#332e28, .95);
-    background-color: $color-secondary_blue_3;
+    background-color: $color-primary;
     display: grid;
 
-    grid-template-columns: [side-section_start] 1fr [side-section_end content-section_start] 4fr [content-section_end];
+    grid-template-columns: [side-section_start] 0.9fr [side-section_end content-section_start] 2fr [content-section_end];
 
-    grid-template-rows: repeat(13, 1fr);
+    grid-template-rows: 0.4fr repeat(8, 1fr);
 }
 
 .media-icon {
@@ -75,5 +76,5 @@ body {
 
 .dot {
     font-size: 3.5rem;
-    
+
 }
