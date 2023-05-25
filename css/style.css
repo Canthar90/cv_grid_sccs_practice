@@ -115,11 +115,31 @@ body {
     align-items: center;
     grid-column: 2 / 3;
     grid-row: 1 / 2; }
-  .education__contetn {
+  .education__content {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     display: grid;
-    grid-template-columns: 1fr 0.5fr; }
+    grid-template-columns: 0.2fr 1fr 0.5fr; }
+    .education__content .dot {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    .education__content-date {
+      grid-column: 3 / 4;
+      grid-row: 1 / 2; }
+    .education__content-education-institution {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-size: 2rem; }
+    .education__content-subject {
+      grid-column: 2 / 3;
+      display: flex;
+      align-items: start;
+      justify-content: start;
+      font-weight: 200; }
 
 .experience {
   background-color: orangered;
