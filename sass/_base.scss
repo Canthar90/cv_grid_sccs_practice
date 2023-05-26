@@ -17,9 +17,9 @@ $font_secondary: "Roboto", sans-serif;
 // Break points
 $bp-largest: 112em;
 $bp-larg-1: 93em;
-$bp-medium-1: 68.75em;
-$bp-small-1: 56.25em;
-$bp-small-2: 43.75em;
+$bp-medium-1: 75em;
+$bp-small-1: 62.5em;
+$bp-small-2: 50em;
 
 
 *,
@@ -58,7 +58,7 @@ body {
     background-color: $color-primary;
     display: grid;
 
-    grid-template-columns: [side-section_start] 0.9fr [side-section_end content-section_start] 2fr [content-section_end];
+    grid-template-columns: [side-section_start] 0.9fr [side-section_end content-section_start] auto [content-section_end];
 
     grid-template-rows: 0.4fr repeat(6, 1fr) 0.5fr;
 
