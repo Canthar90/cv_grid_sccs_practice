@@ -14,6 +14,14 @@ $font_primary: "Monserrat", sans-serif;
 $font_secondary: "Roboto", sans-serif;
 
 
+// Break points
+$bp-largest: 112em;
+$bp-larg-1: 93em;
+$bp-medium-1: 68.75em;
+$bp-small-1: 56.25em;
+$bp-small-2: 43.75em;
+
+
 *,
 ::before,
 ::after{
@@ -25,6 +33,14 @@ $font_secondary: "Roboto", sans-serif;
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+
+    @media only screen and(max-width: $bp-larg-1) {
+        font-size: 60%;
+    }
+
+    @media only screen and (max-width: $bp-small-1){
+        font-size: 50%;
+    }
 }
 
 body {
@@ -36,7 +52,7 @@ body {
 }
 
 .container {
-    margin: 10rem 45rem;
+    margin: 10rem 40rem;
     
     box-shadow: 0 2rem 4rem rgba(#332e28, .95);
     background-color: $color-primary;
@@ -45,6 +61,22 @@ body {
     grid-template-columns: [side-section_start] 0.9fr [side-section_end content-section_start] 2fr [content-section_end];
 
     grid-template-rows: 0.4fr repeat(6, 1fr) 0.5fr;
+
+    @media only screen and (max-width: $bp-largest){
+        margin: 10rem 25rem;
+    }
+
+    @media only screen and (max-width: $bp-larg-1){
+        margin: 5rem 10rem;
+    }
+
+    @media only screen and  (max-width: $bp-medium-1){
+        margin: 0;
+    }
+
+    @media only screen and (max-width: $bp-small-2){
+        grid-template-rows: 0.4fr repeat(7, auto) 0.5fr;
+    }
 }
 
 .media-icon {
