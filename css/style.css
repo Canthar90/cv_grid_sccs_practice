@@ -30,8 +30,8 @@ body {
   fill: #27374D; }
 
 .skill_icon {
-  width: 1.6rem;
-  height: 1.6rem;
+  width: 1.5rem;
+  height: 1.5rem;
   fill: #27374D; }
 
 .hr {
@@ -214,6 +214,26 @@ body {
     border-radius: 50%; }
 
 .skills {
-  background-color: #E3F4F4;
   grid-row: 6 / 8;
-  grid-column: content-section_start / content-section_end; }
+  grid-column: content-section_start / content-section_end;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(7, 1fr) 1rem; }
+  .skills .hr {
+    grid-row: 8 / 9;
+    grid-column: 1 / -1; }
+  .skills__header {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: .02fr .1fr 1fr;
+    padding: 1rem;
+    align-items: center; }
+  .skills__item {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1.6fr 2fr;
+    gap: .5rem; }
+    .skills__item-name {
+      text-transform: uppercase;
+      font-family: "Roboto", sans-serif;
+      font-weight: 400; }
