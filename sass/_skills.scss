@@ -1,6 +1,6 @@
 .skills {
     
-    grid-row: 6 / 8;
+    grid-row: 5 / 7;
     grid-column: content-section_start / content-section_end;
 
     display: grid;
@@ -17,6 +17,7 @@
         display: grid;
         grid-template-columns: .02fr .1fr 1fr;
         padding: 1rem;
+        gap: .2rem;
         align-items: center;
 
     }

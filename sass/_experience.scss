@@ -1,6 +1,6 @@
 .experience {
 
-    grid-row: 3 / 6;
+    grid-row: 3 / 5;
     grid-column: content-section_start / content-section_end ;
 
     display: grid;
@@ -32,6 +32,7 @@
             gap: 1rem;
             grid-template-columns: 0.2fr 1fr 0.5fr 3rem;
             grid-template-rows: 1fr 0.5fr;
+            text-transform: uppercase;
 
             .dot {
                 grid-column: 1 / 2;

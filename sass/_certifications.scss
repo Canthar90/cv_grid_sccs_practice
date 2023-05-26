@@ -1,4 +1,28 @@
 .certifications {
-    grid-row: 8 / 9;
+    grid-row: 7 / 8;
     grid-column: content-section_start / content-section_end;
+
+    display: grid;
+    grid-template-rows: 0.2fr 1fr;
+    padding: 1rem;
+
+    &__header {
+        justify-content: center;
+        align-items: center;
+        display: grid;
+        gap: .2rem;
+        grid-template-columns: .02fr 2fr;
+        
+    }
+
+    &__items {
+        padding: 2rem;
+        display: grid;
+        gap: 0.7rem;
+
+        &__item {
+            text-transform: uppercase;
+            font-weight: 400;
+        }
+    }
 }
